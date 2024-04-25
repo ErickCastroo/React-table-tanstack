@@ -1,0 +1,28 @@
+button {
+  height: 50px;
+  margin: 5px 10px 5px 0; /* Ajusta el espacio horizontal entre botones modificando el valor de la derecha (10px en este ejemplo) */
+  width: 120px;
+  background: #333;
+  display: inline-block; /* Asegúrate de que los botones estén en línea uno al lado del otro */
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404c5d 1px;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  transition: 500ms;
+}
+
+button:active {
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  transition: 100ms;
+}
