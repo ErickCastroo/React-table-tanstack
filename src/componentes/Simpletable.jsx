@@ -38,10 +38,6 @@ function Simpletable() {
       accessorKey: "email",
     },
 
-    {
-      header: "rol",
-      accessorKey: "rol",
-    },
 
     {
       header: "Fecha de nacimiento",
@@ -97,8 +93,9 @@ function Simpletable() {
                         header.column.columnDef.header,
                         header.getContext()
                       )}
-                      {{ asc: <FaSortAlphaUp />, desc: <FaSortAlphaDownAlt /> }[
-                        header.column.getSortDirection()
+                    
+                    {{ asc: <FaSortAlphaUp />, desc: <FaSortAlphaDownAlt /> }[
+                        header.column.getFirstSortDir()
                       ] ?? null}
                     </div>
                   )}
